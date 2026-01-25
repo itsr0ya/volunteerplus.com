@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+  padding: 0;
+  margin: 0; 
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+} 
+
+.active {
+  text-decoration: underline 0.1875rem rgb(253, 197, 0); 
+}
+
+.skip-link {
+  position: absolute;
+  left: -12.5rem;              
+  font-size: 1.25rem;    
+}
+
+.skip-link:focus {
+  position: initial;
+  left: 0;
+}
+
+h1 { /* Used for home page */
+  font-size: 1.25rem;   
+  font-weight: 500;
+  color: rgb(0, 0, 128);
+  margin-bottom: 0.5rem;
+}
+
+.h1-description { /* Used across destination pages cause everything needed to be centred */
+  text-align: center;
+}
+
+.underline-h1 {     /*Underlined h1 for outdoor and indoor opportunities list only*/
+  font-weight: 700;
+  font-size: 1.25rem;   
+  color: rgb(0, 0, 128);
+  margin-bottom: 1rem;         
+  position: relative;
+  display: inline-block;
+}
+
+.underline-h1::after {    /*Yellow underline for h1 to distinguish main heading from the rest of the page */
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.375rem;        /* Negative value cause it positions the yellow line -0.375rem from the bottom of its positioned ancestor h1 */   
+  width: 6.25rem;             
+  height: 0.1875rem;        
+  background-color: #fae110;
+  border-radius: 0.125rem;      
+}
+
+.h1-list {              /* h1-list was used for items of cards for each volunteer opportunity heading1 */
+  font-size: 1.2rem;
+  font-weight: 700;
+  color:rgb(0, 0, 128);
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0 2rem 0;
+  text-align: center;
+  align-items: center;
+}
+
+.h1-list::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.375rem;            
+  width: 14rem;             
+  height: 0.1875rem;         
+  background-color: #fae110;
+  border-radius: 0.125rem;      
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.125rem;   
+  color: rgb(9, 12, 8);
+  margin-bottom: 0.5rem;   
+}
+
+.h2-description {
+  padding: 0.5rem;
+  font-weight: 700;
+  font-size: 1.125rem;   
+  color: rgb(9, 12, 8);
+  margin-bottom: 0.5rem;  
+  background-color: rgba(255, 213, 0, 0.2);   
+  text-align: center;
+}
+
+.underline-h2 {     /*Underlined h2 for home page*/
+  font-weight: 700;
+  font-size: 1.125rem;   
+  color: rgb(0, 0, 128);
+  margin-bottom: 1rem;         
+  position: relative;
+  display: inline-block;
+}
+
+.underline-h2::after {        /*To add the yellow dash under h2*/
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.375rem;            
+  width: 6.25rem;            
+  height: 0.1875rem;         
+  background-color: #fae110;
+  border-radius: 0.125rem;      
+}
+
+.category-h2{
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgb(0, 0, 83);
+  padding: 0.5rem 0 0.25rem 0;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.0625rem;       
+  color:rgb(79, 0, 11);
+  margin: 2rem 0 0.5rem 0;
+}
+
+.foot-h3 {
+  font-weight: 500;
+  font-size: 1.0625rem;    
+  color: rgb(253, 197, 0);
+  margin-bottom: 0.5rem;
+}
+
+strong {
+  font-weight: 600;
+  font-size: 1.09rem;        
+  color: rgb(79, 0, 11);
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.0625rem;       
+  color: rgb(9, 12, 8);
+  line-height: 1.6;
+  padding-left:0;                
+  margin: 0 0 1rem;       
+}
+
+.p-description {
+  text-align: center;
+}
+
+/* Mobile viewport */
+.site-header {
+  background-color: rgb(253, 248, 241);          
+  box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,.1);
+  text-align: center;                         
+  display: block;
+}
+
+#logo {
+  font-weight: 700;
+  font-size: 1.25rem;           
+  color: rgb(253, 197, 0);                    
+  background-color:rgb(0, 0, 83);        
+  display:flex;
+  padding: 1em;
+  min-height: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+  text-decoration: none;    
+}
+
+nav a {
+  display: block;                             
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;            
+  color: rgb(0, 0, 83);
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover, nav a:focus {
+  background-color: rgb(253, 197, 0);
+  color: rgb(0, 0, 83);
+}
+
+nav ul {
+  list-style: none; 
+}
+
+#hero {
+  padding: 10em 1em 1em;
+  background-image: url(images/logan-city.jpg); /* I did not know where to inclue a alt text for hero image, so i put it here. Alt="A view of Logan City with tree-lined streets, community buildings, and people walking outdoors on a bright day — representing connection, activity, and local volunteering."*/
+  display: block;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 18.75rem;
+}
+
+#hero div {
+  background-color: rgba(255, 213, 0, 0.8); 
+  display: inline-block;
+  padding: 0 0.25em 0 0.25em;
+  border-radius: 0.75em;
+}
+
+#hero h1 { /* her h1 was only used for heading on background image once */
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  font-weight: 500;
+  font-size: 1.1875rem;        
+  text-align: center;
+  line-height: 1.5;
+}
+
+.no-break { /* Some words like Volunteer+ needed to stay togetherand in different view port wihtout having span it would break and would not make sense */
+  white-space: nowrap;
+}
+
+.containers { /* Buttons for Inddor and Outdoor category in Home page */
+  padding: 0 0 2rem 0;
+}
+
+.container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.container a {
+  font-weight: 700;
+  font-size: 0.9375rem;     
+  text-align: center;
+  text-decoration: none;
+}
+
+.button {
+  min-width: 15rem;
+  min-height: 2.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 128);
+  border: 0.0625rem solid rgb(0, 0, 83);
+  border-radius: 0.5rem;
+  padding: 1em 0 1em 0;
+}
+
+.button:hover {
+  background-color: rgb(0, 0, 128);
+  color: rgb(255, 255, 255);
+}
+
+.button i {
+  margin-left: 0.3125rem;       /* Margin creates space between the text and icon*/
+}
+
+.home-section1, .home-section3 {
+  padding: 1em 1em 1em 1em;
+  background-color: rgb(253, 248, 241);
+}
+.home-section2 {
+  padding: 1em 1em 1em 1em;
+  background-color: rgb(255, 255, 255);
+}
+
+.stories-cards{ /*volunterring stories' cards*/ 
+  display:flex;
+  flex-wrap:wrap;
+  gap: 1.5rem;
+  padding: 1.5rem 0 1.5rem 0 ;
+}
+
+.volunteering-stories{ /* Each outer card boxs */
+  flex-basis: 100%;
+  display:flex;                 /* center inner .story */
+  justify-content:center;
+  align-items:stretch;
+}
+
+.story { /* INNER CARD */
+  width: 18.75rem;             
+  min-height: 13.75rem;       
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  border: 0.0625rem solid rgb(0, 0, 128); 
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+  font-size: 1rem;              
+}
+
+footer {
+  background-color: rgb(0, 0, 83);
+  padding: 0.5rem;
+}
+
+.footer-col, #footer-contact{
+  color: rgb(245, 245, 245);
+  padding: 1em 1em 1em 1em;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1rem;              
+}
+
+.footer-col li {
+  padding-left: 0.5rem;
+  display: block;
+  text-decoration: none;
+}
+
+.footer-col a{
+  color: rgb(245, 245, 245);
+}
+
+.footer-col a:hover{
+text-decoration: none;
+color: rgb(253, 197, 0);
+}
+
+.footer-bottom {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer p {
+  color: rgb(245, 245, 245);
+  font-size: 1rem;              
+  padding-left: 1rem;
+}
+
+#footer-contact a, #footer-contact li{
+  list-style: none;
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+  padding-left: 0.5rem;
+}
+
+#footer-contact a:hover {
+color: rgb(253, 197, 0);
+}
+/* About Page */
+.story1 {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  border: 0.0625rem solid rgb(0, 0, 83);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  line-height: 1.5;
+  font-size: 1rem;              
+}
+
+.contact li {
+  list-style: none;
+}
+
+.contact a {
+  text-decoration:none;
+  color: rgb(79, 0, 11);
+  font-style: italic;
+}
+
+.contact a:hover {
+  text-decoration: dashed;
+  color: rgb(0, 0, 128);
+}
+
+.contact {
+  font-weight: 400;
+  font-size: 1.09375rem;      
+  color: black;
+  line-height: 1.6;
+  padding: 1em 1em 1em 1em;
+  background-color: rgb(253, 248, 241);
+}
+
+.about-section1, 
+.about-section3,
+#detail-section,
+.attribution{
+  padding: 1em 1em 1em 1em;
+}
+
+.about-section2 {
+  padding: 1em 1em 1em 1em;
+  background-color: rgb(253, 248, 241);
+}
+
+.volunteer-list {
+  display: grid; /* Turns the container into a Grid */ 
+  grid-template-columns: 1fr;   /* Mobile defaults to a single column */
+  gap: 2rem; /* Space between rows and columns */
+  padding: 1rem; 
+  justify-content: center;
+  text-align: center;
+}
+
+.list-1 { /* ITEM: .list-1 - The card itself */
+  background-color: rgb(253, 248, 241);
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 0.5rem; 
+  padding: 0.75rem 2rem 2rem 2rem; 
+  text-align: center; 
+}
+
+/* Indoor and Outdoor Category Pages */
+.category {
+  padding: 1em 1em 1em 1em;
+  justify-content: center;
+  text-align: center;
+}
+
+.read-more a{
+  font-size: 1.2rem;
+  color: rgb(0, 0, 128);
+  font-size: 1.0625rem;   
+  font-weight: 400;
+}
+
+.read-more i {
+  margin-left: 0.3125rem;       /* Margin creates space between the text and hte icon*/
+}
+.category-image {
+  width: 100%;
+  max-height: 20rem;
+  border-radius: 0.2rem;
+}
+
+#breadcrumb { 
+  display: block; 
+  padding: 0.75rem;
+  background-color: rgb(245, 245, 245);
+}
+
+#breadcrumb a {
+  all: unset;
+  color: rgb(1, 68, 126);
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#breadcrumb li {
+  display: inline;
+  font-size: 1rem;
+}
+
+#breadcrumb li+li:before {
+  all: unset;
+  padding: 0.3rem;
+  content: ">\00a0";
+}
+
+#breadcrumb li a:hover {
+  color: #4F000B;
+  text-decoration:none;
+}
+
+#detail-section img { /* Images in destination page */
+  width: 100%; 
+  padding-bottom: 1rem;
+}
+
+.opportunity-content ul {
+  text-align: left;
+  padding-left: 1.2rem;
+}
+
+.opportunity-content li {
+  line-height: 1.6;
+  list-style:inside;
+  padding-bottom: 0.5rem;
+}
+
+.opportunity-content {
+  padding: 1em 1em 1em 1em;
+}
+
+@media (min-width: 768px) {
+
+html {
+  font-size: 112%;   /* Increases the font size by 112% across all the pages */
+}
+
+nav li {
+  display: inline-block; 
+  padding: 0.5rem 2rem;
+  }
+  
+  #hero { /* Centers the hero image and the heading */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 12.5rem; 
+  }
+  
+  .volunteering-stories {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50% - 1rem); /* two columns */
+  }
+
+  .footer-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* evenly spaced columns */
+    gap: 2.5rem;
+    max-width: 75rem; 
+    text-align: center;
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .footer-col li {
+    padding: 0;
+  }
+
+  .story1 {
+    width: 25rem;
+    min-height: 6.25rem;
+  }
+
+  .story {
+    width: 25rem; 
+    height: 14.375rem; 
+  }
+
+  .containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .home-section1, 
+  .home-section2, 
+  .home-section3, 
+  .about-section1, 
+  .about-section2, 
+  .about-section3, 
+  .contact,
+  #detail-section
+  .opportunity-content,
+  .attribution,
+  .contact {
+    padding: 2rem;
+  }
+  
+  .volunteer-list{
+    grid-template-columns: 1fr; 
+    max-width: 29rem;
+    margin: 0 auto; 
+    justify-items: center; 
+    }
+    
+    .list-1 {
+      width: 100%; 
+      text-align: center;
+    }
+    
+    .opportunity-content ul {
+      text-align: center;
+    }
+    
+    #breadcrumb li {
+      all: unset;
+      /* I couldn't fix the breadcrumb space for 867px viewport so I just unset the list style and it worked */
+  }
+}
+
+@media (min-width: 1400px) { 
+  
+  html {
+    font-size: 125%;
+  }
+  
+  .site-header { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    text-align: left; 
+    background-color: rgb(0, 0, 83);
+  }
+  
+  .volunteering-stories {
+    flex: 1 1 30%;                 
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  nav a {
+    color: rgb(245, 245, 245);
+    font-weight: 500;
+  }
+  
+  p {
+    max-width: 85ch;  /* The viewport is really wide and text as wide as the viewport was really confusing */
+   }
+
+  .containers {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0;
+  }
+
+  .home-section1,
+  .home-section2,
+  .home-section3,
+  .about-section1,
+  .about-section2,
+  .about-section3,
+  .indoor-section1,
+  .attribution,
+  .contact {
+    padding: 1rem 3rem 4rem 3rem;
+  }
+  
+  .volunteer-list {
+    grid-template-columns: 1fr 1fr;      /* This creates two equal columns */
+    max-width: 70rem; 
+    margin: 0 auto; /* This centers the whole two-column section */
+    gap: 3rem;
+    }
+    
+    .list-1 {
+      width: auto;  /* Without having it, cards would strech into one another */
+    }
+    
+    #detail-section{
+      padding: 1rem 10rem 0 10rem;
+    }
+    
+    .p-description {
+    max-width: none;
+    padding-bottom: 2rem;
+    }
+    
+    .opportunity-content ul {
+      padding-bottom: 2rem;
+    }
+    
+    #detail-section img {
+      width: 80%;
+      height: 25rem; 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .opportunity-content{
+      padding: 1rem 14rem 4rem 14em;
+    }
+    
+    #breadcrumb ul {
+    padding-left: 0.5rem; /* To make it aligned it with the logo*/
+  }
+  
+  #breadcrumb li {
+    font-size: 0.9rem; /* cuase of all:unset; in @media 867 I needed to apply a font size */
+  }
+  
+  .button {
+    min-width: 20rem;
+    min-height: 4rem;
+  }
+}
