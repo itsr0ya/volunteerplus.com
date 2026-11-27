@@ -1,4 +1,6 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
   padding: 0;
   margin: 0; 
@@ -30,11 +32,11 @@ h1 { /* Used for home page */
   margin-bottom: 0.5rem;
 }
 
-.h1-description { /* Used across destination pages cause everything needed to be centred */
+.h1-description {
   text-align: center;
 }
 
-.underline-h1 {     /*Underlined h1 for outdoor and indoor opportunities list only*/
+.underline-h1 {
   font-weight: 700;
   font-size: 1.25rem;   
   color: rgb(0, 0, 128);
@@ -43,21 +45,21 @@ h1 { /* Used for home page */
   display: inline-block;
 }
 
-.underline-h1::after {    /*Yellow underline for h1 to distinguish main heading from the rest of the page */
+.underline-h1::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -0.375rem;        /* Negative value cause it positions the yellow line -0.375rem from the bottom of its positioned ancestor h1 */   
+  bottom: -0.375rem;
   width: 6.25rem;             
   height: 0.1875rem;        
   background-color: #fae110;
   border-radius: 0.125rem;      
 }
 
-.h1-list {              /* h1-list was used for items of cards for each volunteer opportunity heading1 */
+.h1-list {
   font-size: 1.2rem;
   font-weight: 700;
-  color:rgb(0, 0, 128);
+  color: rgb(0, 0, 128);
   position: relative;
   display: inline-block;
   margin: 1rem 0 2rem 0;
@@ -69,7 +71,7 @@ h1 { /* Used for home page */
   content: "";
   position: absolute;
   left: 0;
-  bottom: -0.375rem;            
+  bottom: -0.375rem;
   width: 14rem;             
   height: 0.1875rem;         
   background-color: #fae110;
@@ -93,7 +95,7 @@ h2 {
   text-align: center;
 }
 
-.underline-h2 {     /*Underlined h2 for home page*/
+.underline-h2 {
   font-weight: 700;
   font-size: 1.125rem;   
   color: rgb(0, 0, 128);
@@ -102,18 +104,18 @@ h2 {
   display: inline-block;
 }
 
-.underline-h2::after {        /*To add the yellow dash under h2*/
+.underline-h2::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -0.375rem;            
+  bottom: -0.375rem;
   width: 6.25rem;            
   height: 0.1875rem;         
   background-color: #fae110;
   border-radius: 0.125rem;      
 }
 
-.category-h2{
+.category-h2 {
   font-size: 1rem;
   font-weight: 700;
   color: rgb(0, 0, 83);
@@ -123,7 +125,7 @@ h2 {
 h3 {
   font-weight: 500;
   font-size: 1.0625rem;       
-  color:rgb(79, 0, 11);
+  color: rgb(79, 0, 11);
   margin: 2rem 0 0.5rem 0;
 }
 
@@ -145,7 +147,7 @@ p {
   font-size: 1.0625rem;       
   color: rgb(9, 12, 8);
   line-height: 1.6;
-  padding-left:0;                
+  padding-left: 0;                
   margin: 0 0 1rem;       
 }
 
@@ -165,8 +167,8 @@ p {
   font-weight: 700;
   font-size: 1.25rem;           
   color: rgb(253, 197, 0);                    
-  background-color:rgb(0, 0, 83);        
-  display:flex;
+  background-color: rgb(0, 0, 83);        
+  display: flex;
   padding: 1em;
   min-height: 1rem;
   justify-content: center;
@@ -195,7 +197,7 @@ nav ul {
 
 #hero {
   padding: 10em 1em 1em;
-  background-image: url(images/logan-city.jpg); /* I did not know where to inclue a alt text for hero image, so i put it here. Alt="A view of Logan City with tree-lined streets, community buildings, and people walking outdoors on a bright day — representing connection, activity, and local volunteering."*/
+  background-image: url(images/logan-city.jpg);
   display: block;
   background-size: cover;
   max-width: 100%;
@@ -205,23 +207,23 @@ nav ul {
 #hero div {
   background-color: rgba(255, 213, 0, 0.8); 
   display: inline-block;
-  padding: 0 0.25em 0 0.25em;
+  padding: 0 0.25em;
   border-radius: 0.75em;
 }
 
-#hero h1 { /* her h1 was only used for heading on background image once */
-  padding: 0.5em 0.5em 0.5em 0.5em;
+#hero h1 {
+  padding: 0.5em;
   font-weight: 500;
   font-size: 1.1875rem;        
   text-align: center;
   line-height: 1.5;
 }
 
-.no-break { /* Some words like Volunteer+ needed to stay togetherand in different view port wihtout having span it would break and would not make sense */
+.no-break {
   white-space: nowrap;
 }
 
-.containers { /* Buttons for Inddor and Outdoor category in Home page */
+.containers {
   padding: 0 0 2rem 0;
 }
 
@@ -249,7 +251,7 @@ nav ul {
   color: rgb(0, 0, 128);
   border: 0.0625rem solid rgb(0, 0, 83);
   border-radius: 0.5rem;
-  padding: 1em 0 1em 0;
+  padding: 1em 0;
 }
 
 .button:hover {
@@ -258,57 +260,65 @@ nav ul {
 }
 
 .button i {
-  margin-left: 0.3125rem;       /* Margin creates space between the text and icon*/
+  margin-left: 0.3125rem;
 }
 
 .home-section1, .home-section3 {
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
   background-color: rgb(253, 248, 241);
 }
+
 .home-section2 {
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
   background-color: rgb(255, 255, 255);
 }
 
-.stories-cards{ /*volunterring stories' cards*/ 
-  display:flex;
-  flex-wrap:wrap;
+.stories-cards {
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
-  padding: 1.5rem 0 1.5rem 0 ;
+  padding: 1.5rem 0;
 }
 
-.volunteering-stories{ /* Each outer card boxs */
+.volunteering-stories {
   flex-basis: 100%;
-  display:flex;                 /* center inner .story */
-  justify-content:center;
-  align-items:stretch;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
 }
 
-.story { /* INNER CARD */
-  width: 18.75rem;             
-  min-height: 13.75rem;       
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  border: 0.0625rem solid rgb(0, 0, 128); 
+.story {
+  width: 18.75rem;
+  min-height: 13.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 0.0625rem solid rgb(0, 0, 128);
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   line-height: 1.5;
-  font-size: 1rem;              
+  font-size: 1rem;
 }
 
+/* Footer */
 footer {
   background-color: rgb(0, 0, 83);
   padding: 0.5rem;
 }
 
-.footer-col, #footer-contact{
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-col, #footer-contact {
   color: rgb(245, 245, 245);
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1rem;              
+  font-size: 1rem;
 }
 
 .footer-col li {
@@ -317,13 +327,13 @@ footer {
   text-decoration: none;
 }
 
-.footer-col a{
+.footer-col a {
   color: rgb(245, 245, 245);
 }
 
-.footer-col a:hover{
-text-decoration: none;
-color: rgb(253, 197, 0);
+.footer-col a:hover {
+  text-decoration: none;
+  color: rgb(253, 197, 0);
 }
 
 .footer-bottom {
@@ -333,11 +343,13 @@ color: rgb(253, 197, 0);
 
 footer p {
   color: rgb(245, 245, 245);
-  font-size: 1rem;              
-  padding-left: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-#footer-contact a, #footer-contact li{
+#footer-contact a, #footer-contact li {
   list-style: none;
   text-decoration: none;
   color: rgb(245, 245, 245);
@@ -345,19 +357,20 @@ footer p {
 }
 
 #footer-contact a:hover {
-color: rgb(253, 197, 0);
+  color: rgb(253, 197, 0);
 }
+
 /* About Page */
 .story1 {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border: 0.0625rem solid rgb(0, 0, 83);
   border-radius: 0.5rem;
   padding: 1rem;
   line-height: 1.5;
-  font-size: 1rem;              
+  font-size: 1rem;
 }
 
 .contact li {
@@ -365,7 +378,7 @@ color: rgb(253, 197, 0);
 }
 
 .contact a {
-  text-decoration:none;
+  text-decoration: none;
   color: rgb(79, 0, 11);
   font-style: italic;
 }
@@ -377,67 +390,67 @@ color: rgb(253, 197, 0);
 
 .contact {
   font-weight: 400;
-  font-size: 1.09375rem;      
+  font-size: 1.09375rem;
   color: black;
   line-height: 1.6;
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
   background-color: rgb(253, 248, 241);
 }
 
-.about-section1, 
+.about-section1,
 .about-section3,
 #detail-section,
-.attribution{
-  padding: 1em 1em 1em 1em;
+.attribution {
+  padding: 1em;
 }
 
 .about-section2 {
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
   background-color: rgb(253, 248, 241);
 }
 
 .volunteer-list {
-  display: grid; /* Turns the container into a Grid */ 
-  grid-template-columns: 1fr;   /* Mobile defaults to a single column */
-  gap: 2rem; /* Space between rows and columns */
-  padding: 1rem; 
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
   justify-content: center;
   text-align: center;
 }
 
-.list-1 { /* ITEM: .list-1 - The card itself */
+.list-1 {
   background-color: rgb(253, 248, 241);
   border: 1px solid rgb(204, 204, 204);
-  border-radius: 0.5rem; 
-  padding: 0.75rem 2rem 2rem 2rem; 
-  text-align: center; 
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem 2rem 2rem;
+  text-align: center;
 }
 
 /* Indoor and Outdoor Category Pages */
 .category {
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
   justify-content: center;
   text-align: center;
 }
 
-.read-more a{
-  font-size: 1.2rem;
+.read-more a {
+  font-size: 1.0625rem;
   color: rgb(0, 0, 128);
-  font-size: 1.0625rem;   
   font-weight: 400;
 }
 
 .read-more i {
-  margin-left: 0.3125rem;       /* Margin creates space between the text and hte icon*/
+  margin-left: 0.3125rem;
 }
+
 .category-image {
   width: 100%;
   max-height: 20rem;
   border-radius: 0.2rem;
 }
 
-#breadcrumb { 
-  display: block; 
+#breadcrumb {
+  display: block;
   padding: 0.75rem;
   background-color: rgb(245, 245, 245);
 }
@@ -463,11 +476,11 @@ color: rgb(253, 197, 0);
 
 #breadcrumb li a:hover {
   color: #4F000B;
-  text-decoration:none;
+  text-decoration: none;
 }
 
-#detail-section img { /* Images in destination page */
-  width: 100%; 
+#detail-section img {
+  width: 100%;
   padding-bottom: 1rem;
 }
 
@@ -478,51 +491,51 @@ color: rgb(253, 197, 0);
 
 .opportunity-content li {
   line-height: 1.6;
-  list-style:inside;
+  list-style: inside;
   padding-bottom: 0.5rem;
 }
 
 .opportunity-content {
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
 }
 
+/* Tablet and desktop */
 @media (min-width: 768px) {
 
-html {
-  font-size: 112%;   /* Increases the font size by 112% across all the pages */
-}
-
-nav li {
-  display: inline-block; 
-  padding: 0.5rem 2rem;
+  html {
+    font-size: 112%;
   }
-  
-  #hero { /* Centers the hero image and the heading */
+
+  nav li {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+  }
+
+  #hero {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 12.5rem; 
+    height: 12.5rem;
   }
-  
+
   .volunteering-stories {
     flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: calc(50% - 1rem); /* two columns */
+    flex-basis: calc(50% - 1rem);
   }
 
-
-
+  /* Footer layout */
   .footer-wrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  gap: 2.5rem;
-  max-width: 75rem;
-  margin: 0 auto;        /* ✅ THIS FIXES IT */
-  width: 100%;
-  text-align: center;
-}
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 2.5rem;
+    max-width: 75rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
 
   .footer-bottom {
     display: flex;
@@ -531,7 +544,6 @@ nav li {
     text-align: center;
     color: #fff;
     padding: 1rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
   }
 
   .footer-col li {
@@ -544,8 +556,8 @@ nav li {
   }
 
   .story {
-    width: 25rem; 
-    height: 14.375rem; 
+    width: 25rem;
+    height: 14.375rem;
   }
 
   .containers {
@@ -555,58 +567,57 @@ nav li {
     gap: 2rem;
   }
 
-  .home-section1, 
-  .home-section2, 
-  .home-section3, 
-  .about-section1, 
-  .about-section2, 
-  .about-section3, 
+  .home-section1,
+  .home-section2,
+  .home-section3,
+  .about-section1,
+  .about-section2,
+  .about-section3,
   .contact,
-  #detail-section
+  #detail-section,
   .opportunity-content,
-  .attribution,
-  .contact {
+  .attribution {
     padding: 2rem;
   }
-  
-  .volunteer-list{
-    grid-template-columns: 1fr; 
+
+  .volunteer-list {
+    grid-template-columns: 1fr;
     max-width: 29rem;
-    margin: 0 auto; 
-    justify-items: center; 
-    }
-    
-    .list-1 {
-      width: 100%; 
-      text-align: center;
-    }
-    
-    .opportunity-content ul {
-      text-align: center;
-    }
-    
-    #breadcrumb li {
-      all: unset;
-      /* I couldn't fix the breadcrumb space for 867px viewport so I just unset the list style and it worked */
+    margin: 0 auto;
+    justify-items: center;
+  }
+
+  .list-1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .opportunity-content ul {
+    text-align: center;
+  }
+
+  #breadcrumb li {
+    all: unset;
   }
 }
 
-@media (min-width: 1400px) { 
-  
+/* Large desktop */
+@media (min-width: 1400px) {
+
   html {
     font-size: 125%;
   }
-  
-  .site-header { 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    text-align: left; 
+
+  .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
     background-color: rgb(0, 0, 83);
   }
-  
+
   .volunteering-stories {
-    flex: 1 1 30%;                 
+    flex: 1 1 30%;
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -616,14 +627,14 @@ nav li {
     color: rgb(245, 245, 245);
     font-weight: 500;
   }
-  
+
   p {
-    max-width: 85ch; 
-   }
+    max-width: 85ch;
+  }
 
   .containers {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     align-items: center;
     gap: 2rem;
     padding: 4rem 0;
@@ -640,51 +651,51 @@ nav li {
   .contact {
     padding: 1rem 3rem 4rem 3rem;
   }
-  
+
   .volunteer-list {
-    grid-template-columns: 1fr 1fr;      /* This creates two equal columns */
-    max-width: 70rem; 
-    margin: 0 auto; /* This centers the whole two-column section */
+    grid-template-columns: 1fr 1fr;
+    max-width: 70rem;
+    margin: 0 auto;
     gap: 3rem;
-    }
-    
-    .list-1 {
-      width: auto;  /* Without having it, cards would strech into one another */
-    }
-    
-    #detail-section{
-      padding: 1rem 10rem 0 10rem;
-    }
-    
-    .p-description {
+  }
+
+  .list-1 {
+    width: auto;
+  }
+
+  #detail-section {
+    padding: 1rem 10rem 0 10rem;
+  }
+
+  .p-description {
     max-width: none;
     padding-bottom: 2rem;
-    }
-    
-    .opportunity-content ul {
-      padding-bottom: 2rem;
-    }
-    
-    #detail-section img {
-      width: 80%;
-      height: 25rem; 
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    .opportunity-content{
-      padding: 1rem 14rem 4rem 14em;
-    }
-    
-    #breadcrumb ul {
-    padding-left: 0.5rem; /* To make it aligned it with the logo*/
   }
-  
+
+  .opportunity-content ul {
+    padding-bottom: 2rem;
+  }
+
+  #detail-section img {
+    width: 80%;
+    height: 25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .opportunity-content {
+    padding: 1rem 14rem 4rem 14em;
+  }
+
+  #breadcrumb ul {
+    padding-left: 0.5rem;
+  }
+
   #breadcrumb li {
-    font-size: 0.9rem; /* cuase of all:unset; in @media 867 I needed to apply a font size */
+    font-size: 0.9rem;
   }
-  
+
   .button {
     min-width: 20rem;
     min-height: 4rem;
