@@ -511,14 +511,18 @@ nav li {
     flex-basis: calc(50% - 1rem); /* two columns */
   }
 
+
+
   .footer-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; /* evenly spaced columns */
-    gap: 2.5rem;
-    max-width: 75rem; 
-    text-align: center;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2.5rem;
+  max-width: 75rem;
+  margin: 0 auto;        /* ✅ THIS FIXES IT */
+  width: 100%;
+  text-align: center;
+}
 
   .footer-bottom {
     display: flex;
@@ -614,7 +618,7 @@ nav li {
   }
   
   p {
-    max-width: 85ch;  /* The viewport is really wide and text as wide as the viewport was really confusing */
+    max-width: 85ch; 
    }
 
   .containers {
